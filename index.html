@@ -2,113 +2,134 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Bijoy Chakma - Graphic Designer">
+    <meta name="author" content="Bijoy Chakma">
+    <title>Bijoy Chakma - Graphic Designer</title>
 
-    <title>MY WEBSITE TITLE</title>
+    <style>
+      /* Global Styles */
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
 
-    <!--
-    including font awesome - it is nifty for adding icons to your webpage
-    see http://fortawesome.github.io/Font-Awesome/icons/
-    -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      header {
+        background-color: #007BFF;
+        color: white;
+        padding: 40px 0;
+        text-align: center;
+      }
 
-    <!-- 
-    including bootstrap - it is nifty for pre-styled components
-    see http://getbootstrap.com/components/ for components
-    see https://bootswatch.com/ for other bootstrap themes
-    -->
-    <link href="https://bootswatch.com/yeti/bootstrap.min.css" rel="stylesheet">
+      header h1 {
+        font-size: 3em;
+        margin: 0;
+      }
 
-    <!-- 
-    including a custom stylesheet that you can edit - css/custom.css
-    -->
-    <link href="css/custom.css" rel="stylesheet">
+      header p {
+        font-size: 1.2em;
+        margin-top: 10px;
+      }
 
+      section {
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .contact-info {
+        margin: 20px 0;
+        font-size: 1.2em;
+      }
+
+      .contact-info a {
+        color: #007BFF;
+        text-decoration: none;
+      }
+
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+
+      .section-title {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #007BFF;
+      }
+
+      .skills, .projects {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .skills div, .projects div {
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 10px;
+        border-radius: 8px;
+        width: 45%;
+        box-sizing: border-box;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .skills div:hover, .projects div:hover {
+        transform: translateY(-5px);
+      }
+
+      .skills h3, .projects h3 {
+        color: #007BFF;
+        margin-bottom: 10px;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
   </head>
 
   <body>
-    <div class="container-fluid colored-header">
-        <div class="row">
-          <div class="col-sm-12">
-            <h1>Simple Website Template</h1>
-            <h4>How to make a website quickly, using github pages</h4>
-          </div>
+    <header>
+      <h1>Bijoy Chakma</h1>
+      <p>Graphic Designer</p>
+    </header>
+
+    <section>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:bijoyc960@gmail.com">bijoyc960@gmail.com</a></p>
+        <p><strong>Phone:</strong> +123 456 7890</p>
+      </div>
+
+      <div class="skills">
+        <div>
+          <h3>Design Skills</h3>
+          <p>Proficient in Adobe Photoshop, Illustrator, InDesign, and more.</p>
         </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-
-          <p class="h3 step">
-            <span class="circle">1</span>
-            Make a <a href="https://github.com/">github</a> account
-          </p>
-          <p class="step-detail">
-            Github is a place where people store code projects. It's used for open source development because people can collaborate on projects, or take an existing project and adapt it. Github relies on git, a version control software (version control = keeping track of changes to files), but you don't have to worry about that yet - just know that git and github are different things. Also, while Github is great for code, <a href="http://readwrite.com/2013/11/08/seven-ways-to-use-github-that-arent-coding" target="blank">it's not only for developers</a>!
-          </p>
-
-          <p class="h3 step">
-            <span class="circle">2</span>
-            Fork my repo, <a href="https://github.com/cathydeng/simple-website-template" target="blank">simple-website-template</a>
-          </p>
-          <p class="step-detail">
-            A <i>repo</i> or <i>repository</i> is just another word for project, & <i>fork</i> is just another word for copy. The <a href="https://github.com/cathydeng/simple-website-template" target="blank">cathydeng/simple-website-template</a> repo is the code for this website. To fork a repo, click the fork button on the top right.
-          </p>
-          <p class="step-detail">
-            A few things happen when you fork simple-website-template:
-          </p>
-          <ul class="step-detail">
-            <li>
-              <strong>You get a copy of the code</strong> - a simple-website-template repo under <i>your</i> github account<br>
-              <i class="fa fa-link"></i> https://github.com/[YOUR USERNAME]/simple-website-template
-            </li>
-            <li>
-              <strong>You get a copy of this website</strong> - at <i>your own url</i>, yay!<br>
-              <i class="fa fa-link"></i> https://[YOUR USERNAME].github.io/simple-website-template
-            </li>
-          </ul>
-          <div class="well well-sm step-detail">
-            You have your own url because github has a really nifty feature, <a href="https://pages.github.com/">github pages</a>, which hosts static pages for you. If you're curious, here are some notes on how this works:
-            <small>
-            <ul>
-              <li>For any github repo, if you have code in the <code>gh-pages</code> branch, github will look for whatever is in <code>index.html</code> & host it at https://[YOUR USERNAME].github.io/[YOUR REPO NAME]</li>
-              <li>You can see what branches a repo has by clicking the branch dropdown on a repo page. Think of branches as different versions of the files within your repo, kind of like 'save as' on a repo (yes, git-related words are weird).</li>
-              <li>When you create a repo from scratch, you start with one default branch called <code>master</code>, and you'll have to create the <code>gh-pages</code> branch. Within a repo, you can create however many branches you want.</li>
-              <li>Because there's already a <code>gh-pages</code> branch in <a href="https://github.com/cathydeng/simple-website-template" target="blank">cathydeng/simple-website-template</a>, all forks of the repo will also have a <code>gh-pages</code> branch</li>
-            </ul></small>
-          </div>
-
-          <p class="h3 step">
-            <span class="circle">3</span>
-            Tweak stuff to your heart's content
-          </p>
-          <p class="step-detail"><strong>HOW TO EDIT FILES</strong></p>
-          <p class="step-detail">
-            Within your simple-website-template repo on github (https://github.com/[YOUR USERNAME]/simple-website-template), you'll see <code>index.html</code>, a folder called <code>css/</code> with <code>custom.css</code> inside it, and <code>README.md</code> (whenever a repo has a README.md inside it, github displays it on the repo page below the file list). You can click the files to see their contents, and click the <i class="fa fa-pencil"></i> icon to edit your code, in your browser!
-          </p>
-          <p class="step-detail"><strong>HOW TO 'SAVE' YOUR CHANGES</strong></p>
-          <p class="step-detail">
-            When you're happy with what you have, you'll need to commit your changes. Think of committing as saving. Each time you make a commit on github, you can put a message saying what you did - in the future, you can see each of your commits, and how your files changed (version control! yay). When you commit, see step 4!
-          </p>
-          <p class="step-detail"><strong>PREVIEWING YOUR CHANGES</strong></p>
-          <p class="step-detail">
-            You'll probably want to see what your website will look like, without blindly tweaking html/css - after all, coding is mostly an exercise in trial & error. This is where codepen comes in - coding in a browser! You can <a href="http://codepen.io/pen/" target="blank">create a new 'pen'</a>, copy over your html & css, and see the result. Try deleting everything within the <code>&lt;body&gt;</code> tag in the html and making something completely new?
-          </p>
-
-          <p class="h3 step">
-            <span class="circle">4</span>
-            See the changes on your website! Instant gratification!
-          </p>
-          <p class="step-detail">
-            <i class="fa fa-link"></i> https://[YOUR USERNAME].github.io/simple-website-template</li>
-          </p>
+        <div>
+          <h3>Creative Process</h3>
+          <p>Expert in visual storytelling, branding, and user-centric design.</p>
         </div>
       </div>
-    </div>
 
+      <div class="projects">
+        <div>
+          <h3>Recent Work 1</h3>
+          <p>Logo design for XYZ Company – A sleek and modern logo representing the brand’s values.</p>
+        </div>
+        <div>
+          <h3>Recent Work 2</h3>
+          <p>Branding & Packaging Design for ABC Product – A bold, eye-catching package design that enhances product appeal.</p>
+        </div>
+      </div>
+    </section>
 
+    <footer>
+      <p>&copy; 2025 Bijoy Chakma | All Rights Reserved</p>
+    </footer>
   </body>
-
 </html>
